@@ -1,115 +1,119 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# OmniSafe Workshop — Jekyll + Minimal Mistakes configuration
+# Replace YOUR-USERNAME and YOUR-REPO-NAME with your actual GitHub username and repo name.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: "OmniSafe: Safety, Privacy, and Reliability of Audio-Visual LLMs"
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  "The first dedicated venue for safety, privacy, and reliability research on audio-visual large language models (AV-LLMs), systems that jointly perceive and reason over speech, sound, images, and video, whose attack surface remains critically underexplored compared to text-only or image-based vision-language safety."
-url: "https://BriansIDP.github.io"
-baseurl: "/OmniSafe-Workshop"
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
+# ============================================================
+# Site identity
+# ============================================================
+title: "OmniSafe Workshop"
+title_separator: "—"
+subtitle: "Safety, Privacy, and Reliability of Audio-Visual LLMs"
+name: "OmniSafe Organizing Committee"
+description: "ICLR 2027 Workshop on Safety, Privacy, and Reliability of Audio-Visual LLMs"
+url: "https://YOUR-USERNAME.github.io"
+baseurl: "/YOUR-REPO-NAME"  # leave as "" if the repo is USERNAME.github.io itself
+repository: "YOUR-USERNAME/YOUR-REPO-NAME"
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# ============================================================
+# SEO / Social
+# ============================================================
+og_image: "/assets/imgs/og-preview.png"  # optional: add a preview image for link sharing
+locale: "en_US"
+logo: ""  # optional: path to a logo shown in the masthead, e.g. "/assets/imgs/logo.png"
 
-include:
-  - _pages
+# ============================================================
+# Theme
+# ============================================================
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "contrast"  # options: default, air, aqua, contrast, dark, dirt, mint, neon, plum, sunrise
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# ============================================================
+# Plugins (required for GitHub Pages)
+# ============================================================
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
+  - jekyll-remote-theme
 
+# ============================================================
+# Navigation
+# ============================================================
+# Defined here and referenced in _data/navigation.yml (create that file too — see below).
+
+# ============================================================
+# Author (used in sidebar if enabled; left blank for workshop sites)
+# ============================================================
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+  name: "OmniSafe Organizing Committee"
+  email: "gs534@cam.ac.uk"
 
+# ============================================================
+# Footer links
+# ============================================================
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:gs534@cam.ac.uk"
 
+# ============================================================
+# Reading / output settings
+# ============================================================
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: UTC
+
+# ============================================================
+# Defaults
+# ============================================================
 defaults:
-  # _posts
   - scope:
       path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      read_time: false
+      share: false
+      related: false
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# ============================================================
+# Exclude from build
+# ============================================================
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
