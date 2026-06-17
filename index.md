@@ -4,6 +4,16 @@ author_profile: false
 title: ""
 ---
 
+<style>
+#main {
+  max-width: 960px;
+  width: 85%;
+  margin: 0 auto;
+  float: none;
+  padding: 0;
+}
+</style>
+
 # OmniSafe: Safety, Privacy, and Reliability of Audio-Visual LLMs
 
 **Intended Venue ICLR 2027** — TBD | TBD
