@@ -8,6 +8,14 @@ title: ""
 .page {
   width: 100% !important;
   padding-right: 0 !important;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.page__inner-wrap {
+  width: 85% !important;
+  margin: 0 auto !important;
+  float: none !important;
 }
 </style>
 
