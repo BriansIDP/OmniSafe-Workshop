@@ -5,6 +5,16 @@ title: ""
 ---
 
 <style>
+p, li, td, th {
+  font-size: 18px !important;
+}
+
+/* Headings — set each independently */
+h1 { font-size: 32px !important; }
+h2 { font-size: 24px !important; }
+h3 { font-size: 18px !important; }
+h4 { font-size: 16px !important; }
+
 .page {
   width: 100% !important;
   padding-right: 0 !important;
@@ -13,25 +23,27 @@ title: ""
 }
 
 .page__inner-wrap {
-  width: 90% !important;
+  width: 80% !important;
   margin: 0 auto !important;
   float: none !important;
+}
+
+.sidebar {
+  display: none !important;
 }
 </style>
 
 # OmniSafe: Safety, Privacy, and Reliability of Audio-Visual LLMs
 
-**Intended Venue ICLR 2027** — TBD | TBD
-
-Contact: [gs534@cam.ac.uk](mailto:gs534@cam.ac.uk)
-
----
+<p><strong>Intended Venue ICLR 2027</strong> — TBD &nbsp;&nbsp; TBD</p>
+<p>Contact: <a href="mailto:gs534@cam.ac.uk">gs534@cam.ac.uk</a></p>
+<!-- --- -->
 
 ## News
 
 - **[TBD] Workshop Status** — Placeholder for any updates
 
----
+<!-- --- -->
 
 ## About
 {: #about}
@@ -42,30 +54,30 @@ Yet the safety research community has not kept pace. Existing "trustworthy MLLM"
 
 **OmniSafe** creates the first dedicated venue and community to address both gaps, bringing together researchers across adversarial robustness, reliability, and privacy to chart a path toward trustworthy AV-LLMs.
 
----
+<!-- --- -->
 
 ## Call for Papers
 {: #cfp}
 
-The **OmniSafe Workshop** invites submissions from researchers and practitioners working on the safety, privacy, and reliability of audio-visual large language models.
+The **OmniSafe Workshop** invites submissions from researchers and practitioners working on the safety, privacy, and reliability of audio-visual large language models. We welcome contributions across the following core research areas:
 
-### Scope
+<!-- ### Scope -->
 
-We welcome contributions across three core research areas and their intersections:
+<!-- We welcome contributions across three core research areas and their intersections: -->
 
 **Scope 1 — Adversarial Robustness**
 
-A harmful prompt that is correctly refused in text can achieve over 80% jailbreak success when delivered as speech with prosodic distortions, because safety training has never covered the acoustic domain. Building red-teaming methodology and guardrails that are robust across all modalities simultaneously is an essentially open problem. Topics include:
+<!-- A harmful prompt that is correctly refused in text can achieve over 80% jailbreak success when delivered as speech with prosodic distortions, because safety training has never covered the acoustic domain. Building red-teaming methodology and guardrails that are robust across all modalities simultaneously is an essentially open problem. Topics include: -->
 
 - Audio, visual, and audio-visual jailbreaking and red-teaming
 - Cross-modal inconsistency attacks
 - Voice spoofing and audio adversarial examples targeting AV-LLM agents
 - Omni-modal guardrail and safety-filter models
-- Physical-world and sensor-level attacks (e.g., ultrasonic "dolphin attacks," adversarial patches persistent through camera feeds)
+- Physical-world and sensor-level attacks (e.g., adversarial patches persistent through camera/microphone)
 
 **Scope 2 — Reliability**
 
-An AV-LLM asked to transcribe a political speech can hallucinate statements the speaker never made; asked to describe a surveillance clip, it can invent actions that never occurred. Hallucinated statements or misinformation about videos can cause serious consequences, yet detection and prevention methods for audio-visual hallucination remain largely underexplored. Topics include:
+<!-- An AV-LLM asked to transcribe a political speech can hallucinate statements the speaker never made; asked to describe a surveillance clip, it can invent actions that never occurred. Hallucinated statements or misinformation about videos can cause serious consequences, yet detection and prevention methods for audio-visual hallucination remain largely underexplored. Topics include: -->
 
 - Audio-visual hallucinations and misinformation detection and mitigation
 - Hallucination and misinformation evaluation benchmarks
@@ -73,17 +85,20 @@ An AV-LLM asked to transcribe a political speech can hallucinate statements the 
 
 **Scope 3 — Privacy**
 
-A user asking an AV-LLM to transcribe a meeting recording may unknowingly expose every speaker's voiceprint, emotional state, and health cues — including bystanders who never consented. Unlike text, these signals are embedded in the raw audio-visual stream itself, invisible to users. Topics include:
+<!-- A user asking an AV-LLM to transcribe a meeting recording may unknowingly expose every speaker's voiceprint, emotional state, and health cues — including bystanders who never consented. Unlike text, these signals are embedded in the raw audio-visual stream itself, invisible to users. Topics include: -->
 
 - Sensitive attribute inference and private attribute profiling from audio-visual inputs
 - Speaker identity and face identity leakage from AV-LLM representations
 - Bystander and third-party privacy in always-on AV devices
 - Membership inference against audio-visual models
-- Privacy-preserving training and inference (anonymisation, machine unlearning, differential privacy, on-device processing)
+- Privacy-preserving training and inference (anonymisation, machine unlearning, differential privacy)
 
 **Cross-cutting Themes**
 
-We also welcome work on: safety of agentic and embodied AV systems; fairness and equity in safety and detection performance across accents, languages, and demographics; policy, regulation, and real-world incident analysis.
+We also welcome work on: 
+- Safety of agentic and embodied AV systems
+- Fairness and equity in safety and detection performance across accents, languages, and demographics; 
+- Policy, regulation, and real-world incident analysis.
 
 ### Benchmark Challenge
 
@@ -106,7 +121,7 @@ Both tracks address problems where no standard benchmark currently exists.
 
 **Format:** We will offer two submission tracks:
 
-- **Regular Papers Track:** Research and position papers (10 pages). References and supplementary materials do not count toward the limit.
+- **Regular Papers Track:** The workshop welcomes submissions of research and position papers (10 pages). References and supplementary materials will not count against these limits.
 - **Short Papers Track:** Short papers (4 pages) to include researchers outside the standard ML conference circuit. Suitable for unpublished ideas, modest theoretical results, follow-up experiments, or fresh perspectives. References and supplementary materials do not count toward the limit.
 
 **Anonymity:** Submissions must be fully anonymized, including any supplementary or linked material such as code.
@@ -117,9 +132,9 @@ Both tracks address problems where no standard benchmark currently exists.
 
 **Contact:** For questions, please reach out at [gs534@cam.ac.uk](mailto:gs534@cam.ac.uk).
 
----
+<!-- --- -->
 
-## Schedule
+## Tentative Schedule
 {: #schedule}
 
 *All times are local.*
@@ -128,24 +143,22 @@ Both tracks address problems where no standard benchmark currently exists.
 |----------|-------------|
 | 09:00–09:20 | Opening: The Omni-Modal Threat Landscape |
 | 09:20–10:30 | Invited Talks: Scope 1 — Adversarial Robustness (×2) |
-| 10:30–11:00 | Spotlight Papers ×4 |
-| 11:00–11:30 | Coffee Break + Poster Session |
+| 10:30–11:30 | Coffee Break + Poster Session 1 |
 | 11:30–12:30 | Invited Talks: Scope 2 — Reliability (×2) |
 | 12:30–14:00 | Lunch + Poster Session |
 | 14:00–15:00 | Invited Talks: Scope 3 — Privacy (×2) |
-| 15:00–15:30 | Spotlight Papers ×4 |
-| 15:30–16:00 | Coffee Break + Poster Session |
-| 16:00–17:00 | Panel: *"Can we make AV-LLMs trustworthy before they scale further?"* |
-| 17:00–17:15 | Closing Remarks + Best Paper Award |
+| 15:00–16:00 | Coffee Break + Poster Session 2 |
+| 16:00–16:45 | Panel: *"AV-LLMs in the Wild: Are We Shipping Vulnerabilities Faster Than We Can Patch Them?"* |
+| 16:50–17:00 | Closing Remarks |
 
----
+<!-- --- -->
 
 ## Speakers
 {: #speakers}
 
 *To be announced.*
 
----
+<!-- --- -->
 
 ## Organizers
 {: #organizers}
