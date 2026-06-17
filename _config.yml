@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: OmniSafe: Safety, Privacy, and Reliability of Audio-Visual LLMs
+title: "OmniSafe: Safety, Privacy, and Reliability of Audio-Visual LLMs"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  The first dedicated venue for safety, privacy, and reliability research on audio-visual large language models (AV-LLMs), systems that jointly perceive and reason over speech, sound, images, and video, whose attack surface remains critically underexplored compared to text-only or image-based vision-language safety.
+  "The first dedicated venue for safety, privacy, and reliability research on audio-visual large language models (AV-LLMs), systems that jointly perceive and reason over speech, sound, images, and video, whose attack surface remains critically underexplored compared to text-only or image-based vision-language safety."
 url: "https://BriansIDP.github.io"
 baseurl: "/OmniSafe-Workshop"
 twitter_username: username
