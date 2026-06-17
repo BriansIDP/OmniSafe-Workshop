@@ -2,7 +2,6 @@
 layout: single
 author_profile: false
 title: ""
-classes: wide
 ---
 
 # OmniSafe: Safety, Privacy, and Reliability of Audio-Visual LLMs
