@@ -5,12 +5,9 @@ title: ""
 ---
 
 <style>
-#main {
-  max-width: 960px;
-  width: 85%;
-  margin: 0 auto;
-  float: none;
-  padding: 0;
+.page {
+  width: 100% !important;
+  padding-right: 0 !important;
 }
 </style>
 
