@@ -1,9 +1,11 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
-    url: /about/
+    url: "/#about"
+  - title: "CFP"
+    url: "/#cfp"
+  - title: "Schedule"
+    url: "/#schedule"
+  - title: "Speakers"
+    url: "/#speakers"
+  - title: "Organizers"
+    url: "/#organizers"
