@@ -91,6 +91,10 @@ defaults:
       share: false
       related: false
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # ============================================================
 # Exclude from build
 # ============================================================
