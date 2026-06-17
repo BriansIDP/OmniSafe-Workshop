@@ -13,7 +13,7 @@ title: ""
 }
 
 .page__inner-wrap {
-  width: 85% !important;
+  width: 90% !important;
   margin: 0 auto !important;
   float: none !important;
 }
