@@ -9,14 +9,14 @@ title_separator: "—"
 subtitle: "Safety, Privacy, and Reliability of Audio-Visual LLMs"
 name: "OmniSafe Organizing Committee"
 description: "ICLR 2027 Workshop on Safety, Privacy, and Reliability of Audio-Visual LLMs"
-url: "https://YOUR-USERNAME.github.io"
-baseurl: "/YOUR-REPO-NAME"  # leave as "" if the repo is USERNAME.github.io itself
-repository: "YOUR-USERNAME/YOUR-REPO-NAME"
+url: "https://BriansIDP.github.io"
+baseurl: "/OmniSafe-Workshop"  # leave as "" if the repo is USERNAME.github.io itself
+repository: "BriansIDP/OmniSafe-Workshop"
 
 # ============================================================
 # SEO / Social
 # ============================================================
-og_image: "/assets/imgs/og-preview.png"  # optional: add a preview image for link sharing
+# og_image: "/assets/imgs/og-preview.png"  # optional: add a preview image for link sharing
 locale: "en_US"
 logo: ""  # optional: path to a logo shown in the masthead, e.g. "/assets/imgs/logo.png"
 
