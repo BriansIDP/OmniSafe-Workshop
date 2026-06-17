@@ -5,7 +5,7 @@ author_profile: false
 
 # OmniSafe: Safety, Privacy, and Reliability of Audio-Visual LLMs
 
-**ICLR 2027 Workshop** — TBD | TBD
+**Intended Venue ICLR 2027** — TBD | TBD
 
 Contact: [gs534@cam.ac.uk](mailto:gs534@cam.ac.uk)
 
@@ -13,7 +13,7 @@ Contact: [gs534@cam.ac.uk](mailto:gs534@cam.ac.uk)
 
 ## News
 
-- **[TBD] Workshop Accepted** — OmniSafe has been accepted to ICLR 2027! More details coming soon.
+- **[TBD] Workshop Status** — Placeholder for any updates
 
 ---
 
@@ -31,7 +31,7 @@ Yet the safety research community has not kept pace. Existing "trustworthy MLLM"
 ## Call for Papers
 {: #cfp}
 
-The **OmniSafe Workshop** at **ICLR 2027** invites submissions from researchers and practitioners working on the safety, privacy, and reliability of audio-visual large language models.
+The **OmniSafe Workshop** invites submissions from researchers and practitioners working on the safety, privacy, and reliability of audio-visual large language models.
 
 ### Scope
 
