@@ -10,7 +10,7 @@ p, li, td, th {
 }
 
 h1 {
-  font-size: 32px !important;
+  font-size: 30px !important;
   white-space: nowrap !important;
 }
 h2 { font-size: 24px !important; }
