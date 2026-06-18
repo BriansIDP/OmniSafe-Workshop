@@ -9,7 +9,6 @@ p, li, td, th {
   font-size: 18px !important;
 }
 
-/* Headings — set each independently */
 h1 { font-size: 32px !important; }
 h2 { font-size: 24px !important; }
 h3 { font-size: 18px !important; }
@@ -26,6 +25,16 @@ h4 { font-size: 16px !important; }
   width: 85% !important;
   margin: 0 auto !important;
   float: none !important;
+  padding-left: 0 !important;
+}
+
+.page__content {
+  width: 100% !important;
+  float: none !important;
+}
+
+aside.sidebar__right {
+  display: none !important;
 }
 
 .sidebar {
