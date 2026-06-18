@@ -14,29 +14,34 @@ h2 { font-size: 24px !important; }
 h3 { font-size: 18px !important; }
 h4 { font-size: 16px !important; }
 
+#main {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 0 4% !important;
+}
+
 .page {
   width: 100% !important;
-  padding-right: 0 !important;
-  margin: 0 auto !important;
+  max-width: 1200px !important;
   float: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
 }
 
 .page__inner-wrap {
-  width: 92% !important;
-  margin: 0 auto !important;
+  width: 100% !important;
   float: none !important;
-  padding-left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .page__content {
   width: 100% !important;
   float: none !important;
+  padding: 0 !important;
 }
 
-aside.sidebar__right {
-  display: none !important;
-}
-
+aside.sidebar__right,
 .sidebar {
   display: none !important;
 }
