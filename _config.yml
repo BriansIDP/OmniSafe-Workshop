@@ -23,7 +23,8 @@ logo: ""  # optional: path to a logo shown in the masthead, e.g. "/assets/imgs/l
 # ============================================================
 # Theme
 # ============================================================
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+# remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "contrast"  # options: default, air, aqua, contrast, dark, dirt, mint, neon, plum, sunrise
 
 # ============================================================
