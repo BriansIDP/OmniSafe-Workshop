@@ -21,7 +21,7 @@ h4 { font-size: 16px !important; }
 
 article.page {
   width: 92% !important;
-  max-width: 1250px !important;
+  max-width: 1500px !important;
   float: none !important;
   padding: 0 !important;
   margin: 0 auto !important;
