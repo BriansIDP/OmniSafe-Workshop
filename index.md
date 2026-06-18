@@ -14,14 +14,13 @@ h2 { font-size: 24px !important; }
 h3 { font-size: 18px !important; }
 h4 { font-size: 16px !important; }
 
-#main {
+.initial-content {
   display: flex !important;
   justify-content: center !important;
-  padding: 0 4% !important;
 }
 
-.page {
-  width: 100% !important;
+article.page {
+  width: 90% !important;
   max-width: 1200px !important;
   float: none !important;
   padding: 0 !important;
@@ -38,7 +37,6 @@ h4 { font-size: 16px !important; }
 .page__content {
   width: 100% !important;
   float: none !important;
-  padding: 0 !important;
 }
 
 aside.sidebar__right,
