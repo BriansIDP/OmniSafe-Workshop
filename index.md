@@ -20,8 +20,8 @@ h4 { font-size: 16px !important; }
 }
 
 article.page {
-  width: 90% !important;
-  max-width: 1200px !important;
+  width: 92% !important;
+  max-width: 1250px !important;
   float: none !important;
   padding: 0 !important;
   margin: 0 auto !important;
