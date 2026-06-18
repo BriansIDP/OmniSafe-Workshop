@@ -9,7 +9,10 @@ p, li, td, th {
   font-size: 18px !important;
 }
 
-h1 { font-size: 32px !important; }
+h1 {
+  font-size: 32px !important;
+  white-space: nowrap !important;
+}
 h2 { font-size: 24px !important; }
 h3 { font-size: 18px !important; }
 h4 { font-size: 16px !important; }
