@@ -23,7 +23,7 @@ h4 { font-size: 16px !important; }
 }
 
 .page__inner-wrap {
-  width: 80% !important;
+  width: 85% !important;
   margin: 0 auto !important;
   float: none !important;
 }
