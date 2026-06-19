@@ -63,7 +63,7 @@ aside.sidebar__right,
 ## About
 {: #about}
 
-Audio-visual large language models (AV-LLMs) — systems that jointly perceive and reason over speech, sound, images, and video — are already deployed in the real world. Qwen3-Omni and Gemini 3.1 Pro process audio, video, and speech natively in real time. Meta sold over 7 million Ray-Ban AI glasses in 2025 alone, each a wearable AV-LLM with a live camera and microphone. Apple's always-on AI glasses are expected to ship in 2027. These systems don't just read and write — they hear and see, continuously, in the real world — and that fundamentally changes the threat landscape.
+Audio-visual large language models (AV-LLMs), such as Google Gemini, are systems that jointly perceive and reason over speech, sound, images, and video, and are already deployed in the real world. These systems don't just read and write — they hear and see, continuously, in the real world — and that fundamentally changes the threat landscape.
 
 Yet the safety research community has not kept pace. Existing "trustworthy MLLM" workshops focus predominantly on text and static images, leaving two critical gaps: (1) unlike static images, the audio and video input channels are largely undefended, and (2) cross-modal interactions open failure modes that single-modality research cannot cover.
 
