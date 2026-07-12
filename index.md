@@ -63,9 +63,9 @@ aside.sidebar__right,
 ## About
 {: #about}
 
-Audio-visual large language models (AV-LLMs), such as Google Gemini, are systems that jointly perceive and reason over speech, sound, images, and video, and are already deployed in the real world. These systems don't just read and write — they hear and see, continuously, in the real world — and that fundamentally changes the threat landscape.
+Audio-visual large language models (AV-LLMs) are systems that jointly perceive and reason over speech, sound, images, and video, and are increasingly moving toward real-world deployment. These systems don't just read and write — they hear and see, continuously, in the real world — and that fundamentally changes the threat landscape.
 
-Yet the safety research community has not kept pace. Existing "trustworthy MLLM" workshops focus predominantly on text and static images, leaving two critical gaps: (1) unlike static images, the audio and video input channels are largely undefended, and (2) cross-modal interactions open failure modes that single-modality research cannot cover.
+Yet the safety research community has not kept pace with the shift toward interactive audio-visual reasoning. Existing “trustworthy MLLM” workshops focus predominantly on text and static images, while work on audio- and video-specific safety and privacy risks remains scattered across different communities and threat models. This leaves three critical gaps for AV-LLMs: (1) audio and video inputs create new attack surfaces for bypassing LLM safety guardrails, (2) multimodal perception raises privacy risks such as bystander privacy, identity leakage, and unintended inference from surrounding context, and (3) cross-modal interactions open failure modes that single-modality research cannot cover.
 
 **OmniSafe** creates the first dedicated venue and community to address both gaps, bringing together researchers across adversarial robustness, reliability, and privacy to chart a path toward trustworthy AV-LLMs.
 
