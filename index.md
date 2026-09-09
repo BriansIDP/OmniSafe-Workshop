@@ -157,17 +157,197 @@ The format will be flexible based on attendance and engagement, with a panel dis
 
 *All times are local.*
 
-| **Time** | **Session** |
-|----------|-------------|
-| 09:00–09:20 | Opening: The Omni-Modal Threat Landscape |
-| 09:20–10:20 | Scope 1 — Adversarial Robustness: Invited Talk + Selected Contributed Talk |
-| 10:20–11:20 | Coffee Break + Poster Session 1 |
-| 11:20–12:20 | Scope 2 — Trustworthiness: Invited Talk + Selected Contributed Talk |
-| 12:20–13:50 | Lunch + Poster Session |
-| 13:50–14:50 | Scope 3 — Privacy: Invited Talk + Selected Contributed Talk |
-| 14:50–15:50 | Coffee Break + Poster Session 2 |
-| 15:50–16:50 | Community Forum: Emerging Challenges in Audio-Visual LLM Safety |
-| 16:50–17:00 | Closing Remarks |
+<style>
+.workshop-schedule {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1.2rem;
+  font-size: 0.96rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.workshop-schedule th {
+  background: #f8fafc;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.workshop-schedule td {
+  padding: 11px 16px;
+  border-bottom: 1px solid #eef0f2;
+  vertical-align: top;
+}
+
+.workshop-schedule tr:last-child td {
+  border-bottom: none;
+}
+
+.workshop-schedule .time {
+  width: 170px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* Morning / Afternoon section headers */
+.workshop-schedule .morning td {
+  background: #eaf4ff;
+  color: #1f4f7a;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 9px 16px;
+}
+
+.workshop-schedule .afternoon td {
+  background: #f2ecff;
+  color: #59427f;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 9px 16px;
+}
+
+/* Breaks */
+.workshop-schedule .break td {
+  background: #fafafa;
+}
+
+/* Highlight discussion-oriented sessions */
+.workshop-schedule .discussion td {
+  background: #fffaf0;
+}
+
+/* Closing */
+.workshop-schedule .closing td {
+  background: #f4faf6;
+}
+
+/* Slight hover effect */
+.workshop-schedule tr.session:hover td {
+  background: #f8fbff;
+}
+
+.schedule-note {
+  color: #6b7280;
+  font-size: 0.88em;
+}
+</style>
+
+<table class="workshop-schedule">
+
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Session</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr class="morning">
+      <td colspan="2">☀ Morning Session</td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">08:45–09:00</td>
+      <td><strong>Welcome and Opening Remarks</strong></td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">09:00–09:30</td>
+      <td><strong>Invited Talk 1</strong></td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">09:30–10:00</td>
+      <td><strong>Invited Talk 2</strong></td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">10:00–10:30</td>
+      <td><strong>Invited Talk 3</strong></td>
+    </tr>
+
+    <tr class="session break">
+      <td class="time">10:30–11:30</td>
+      <td>
+        <strong>Poster Session & Coffee Break</strong>
+        <br>
+        <span class="schedule-note">Poster presentations, discussion, and networking</span>
+      </td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">11:30–12:15</td>
+      <td>
+        <strong>Spotlight Paper Talks</strong>
+        <br>
+        <span class="schedule-note">3 talks × (12 min presentation + 3 min Q&A)</span>
+      </td>
+    </tr>
+
+    <tr class="session break">
+      <td class="time">12:15–13:15</td>
+      <td><strong>Lunch Break</strong></td>
+    </tr>
+
+
+    <tr class="afternoon">
+      <td colspan="2">☀ Afternoon Session</td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">13:15–13:45</td>
+      <td><strong>Invited Talk 4</strong></td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">13:45–14:15</td>
+      <td><strong>Invited Talk 5</strong></td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">14:15–14:45</td>
+      <td><strong>Invited Talk 6</strong></td>
+    </tr>
+
+    <tr class="session break">
+      <td class="time">14:45–15:45</td>
+      <td>
+        <strong>Poster Session & Coffee Break</strong>
+        <br>
+        <span class="schedule-note">Poster presentations, discussion, and networking</span>
+      </td>
+    </tr>
+
+    <tr class="session">
+      <td class="time">15:45–16:00</td>
+      <td>
+        <strong>Selected Tiny Paper Talks</strong>
+        <br>
+        <span class="schedule-note">3 talks × 5 min</span>
+      </td>
+    </tr>
+
+    <tr class="session discussion">
+      <td class="time">16:00–17:00</td>
+      <td>
+        <strong>Panel Discussion</strong>
+        <br>
+        <span class="schedule-note">40 min moderated discussion + 20 min audience Q&A</span>
+      </td>
+    </tr>
+
+    <tr class="session closing">
+      <td class="time">17:00–17:15</td>
+      <td><strong>Awards and Closing Remarks</strong></td>
+    </tr>
+
+  </tbody>
+</table>
 
 <!-- --- -->
 
