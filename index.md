@@ -48,7 +48,7 @@ aside.sidebar__right,
 }
 </style>
 
-# OmniSafe: Safety, Privacy, and Reliability of Audio-Visual LLMs
+# OmniSafe: Safety, Privacy, and Trustworthiness of Audio-Visual LLMs
 
 <p><strong>Intended Venue ICLR 2027</strong> — TBD &nbsp;&nbsp; TBD</p>
 <p>Contact: <a href="mailto:gs534@cam.ac.uk">gs534@cam.ac.uk</a></p>
@@ -65,16 +65,20 @@ aside.sidebar__right,
 
 Audio-visual large language models (AV-LLMs) are systems that jointly perceive and reason over speech, sound, images, and video, and are increasingly moving toward real-world deployment. These systems don't just read and write — they hear and see, continuously, in the real world — and that fundamentally changes the threat landscape.
 
-Yet the safety research community has not kept pace with the shift toward interactive audio-visual reasoning. Existing “trustworthy MLLM” workshops focus predominantly on text and static images, while work on audio- and video-specific safety and privacy risks remains scattered across different communities and threat models. This leaves three critical gaps for AV-LLMs: (1) audio and video inputs create new attack surfaces for bypassing LLM safety guardrails, (2) multimodal perception raises privacy risks such as bystander privacy, identity leakage, and unintended inference from surrounding context, and (3) cross-modal interactions open failure modes that single-modality research cannot cover.
+Yet the safety research community has not kept pace with the shift toward interactive audio-visual reasoning. Existing “trustworthy MLLM” workshops focus predominantly on text and static images, while work on audio- and video-specific safety and privacy risks remains scattered across different communities and threat models. This leaves three critical gaps for AV-LLMs:
 
-**OmniSafe** creates the first dedicated venue and community to address both gaps, bringing together researchers across adversarial robustness, reliability, and privacy to chart a path toward trustworthy AV-LLMs.
+(1) Audio and video inputs create new attack surfaces for bypassing LLM safety guardrails, \
+(2) Audio-visual perception exposes sensitive information about users, bystanders, identities, environments, and surrounding context, and \
+(3) Interactions across audio and vision create hallucinations, conflicting evidence, behavioural inconsistencies, and evaluation challenges that single-modality research cannot capture.
+
+**OmniSafe** creates the first dedicated venue and community to address both gaps, bringing together researchers across adversarial robustness, trustworthiness, and privacy to chart a path toward trustworthy AV-LLMs.
 
 <!-- --- -->
 
 ## Call for Papers
 {: #cfp}
 
-The **OmniSafe Workshop** invites submissions from researchers and practitioners working on the safety, privacy, and reliability of audio-visual large language models. We welcome contributions across the following core research areas:
+The **OmniSafe Workshop** invites submissions from researchers and practitioners working on the safety, privacy, and trustworthiness of audio-visual large language models. We welcome contributions across the following core research areas:
 
 <!-- ### Scope -->
 
@@ -90,39 +94,38 @@ The **OmniSafe Workshop** invites submissions from researchers and practitioners
 - Omni-modal guardrail and safety-filter models
 - Physical-world and sensor-level attacks (e.g., adversarial patches persistent through camera/microphone)
 
-**Scope 2 — Reliability**
+**Scope 2 — Trustworthiness**
 
 <!-- An AV-LLM asked to transcribe a political speech can hallucinate statements the speaker never made; asked to describe a surveillance clip, it can invent actions that never occurred. Hallucinated statements or misinformation about videos can cause serious consequences, yet detection and prevention methods for audio-visual hallucination remain largely underexplored. Topics include: -->
 
 - Audio-visual hallucinations and misinformation detection and mitigation
-- Hallucination and misinformation evaluation benchmarks
-- Uncertainty estimation and calibration for AV-LLMs
+- Uncertainty estimation, calibration, and abstention for AV-LLMs
+- Capability and behaviour profiling for AV-LLMs
+- Interpretability and diagnosis of multimodal failures
+- New evaluation methods for cross-modal reliability and trustworthiness
 
 **Scope 3 — Privacy**
 
 <!-- A user asking an AV-LLM to transcribe a meeting recording may unknowingly expose every speaker's voiceprint, emotional state, and health cues — including bystanders who never consented. Unlike text, these signals are embedded in the raw audio-visual stream itself, invisible to users. Topics include: -->
 
-- Sensitive attribute inference and private attribute profiling from audio-visual inputs
-- Speaker identity and face identity leakage from AV-LLM representations
-- Bystander and third-party privacy in always-on AV devices
-- Membership inference against audio-visual models
-- Privacy-preserving training and inference (anonymisation, machine unlearning, differential privacy)
+- Privacy leakage from audio, video, and surrounding context
+- Membership inference for identity, attribute, and sensitive context
+- Bystander and incidental privacy risks
+- Memorization and disclosure of multimodal information
+- Privacy-preserving training and inference (anonymisation, machine unlearning, differential privacy applied to AV-LLMs)
 
 **Cross-cutting Themes**
 
 We also welcome work on: 
-- Safety of agentic and embodied AV systems
+- Safety of agentic and embodied AI systems
 - Fairness and equity in safety and detection performance across accents, languages, and demographics; 
 - Policy, regulation, and real-world incident analysis.
 
-### Benchmark Challenge
+### Community Forum: Emerging Challenges in Audio-Visual LLM Safety
 
-We are exploring a shared benchmark challenge focused on one of two tracks:
+This session will combine a moderated panel discussion with broader community participation to identify emerging challenges and open research questions in audio-visual LLM safety. Invited panelists will provide perspectives spanning audio, vision, multimodal learning, AI safety, privacy, and responsible AI. The audience will be encouraged to contribute questions, observations, and research priorities.
 
-- **(a) Audio-visual jailbreak red-teaming** — attack and defend an AV-LLM across modalities simultaneously
-- **(b) AV-LLM privacy auditing** — probe deployed models for sensitive attribute leakage or speaker re-identification
-
-Both tracks address problems where no standard benchmark currently exists.
+The format will be flexible based on attendance and engagement, with a panel discussion providing a structured foundation and additional audience interaction added as needed. Key themes and open questions arising from the session will be summarized after the workshop to help inform future research directions.
 
 ### Important Dates
 
@@ -157,13 +160,13 @@ Both tracks address problems where no standard benchmark currently exists.
 | **Time** | **Session** |
 |----------|-------------|
 | 09:00–09:20 | Opening: The Omni-Modal Threat Landscape |
-| 09:20–10:30 | Invited Talks: Scope 1 — Adversarial Robustness (×2) |
-| 10:30–11:30 | Coffee Break + Poster Session 1 |
-| 11:30–12:30 | Invited Talks: Scope 2 — Reliability (×2) |
-| 12:30–14:00 | Lunch + Poster Session |
-| 14:00–15:00 | Invited Talks: Scope 3 — Privacy (×2) |
-| 15:00–16:00 | Coffee Break + Poster Session 2 |
-| 16:00–16:45 | Panel: *"AV-LLMs in the Wild: Are We Shipping Vulnerabilities Faster Than We Can Patch Them?"* |
+| 09:20–10:20 | Scope 1 — Adversarial Robustness: Invited Talk + Selected Contributed Talk |
+| 10:20–11:20 | Coffee Break + Poster Session 1 |
+| 11:20–12:20 | Scope 2 — Trustworthiness: Invited Talk + Selected Contributed Talk |
+| 12:20–13:50 | Lunch + Poster Session |
+| 13:50–14:50 | Scope 3 — Privacy: Invited Talk + Selected Contributed Talk |
+| 14:50–15:50 | Coffee Break + Poster Session 2 |
+| 15:50–16:50 | Community Forum: Emerging Challenges in Audio-Visual LLM Safety |
 | 16:50–17:00 | Closing Remarks |
 
 <!-- --- -->
