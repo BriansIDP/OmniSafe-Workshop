@@ -466,10 +466,10 @@ body {
 }
 
 .schedule-section {
-  background: rgb(232, 181, 173);
+  background: rgb(251, 253, 255);
   color: #414548;
-  border-top: 1px solid rgba(21, 45, 74, 0.12);
-  border-bottom: 1px solid rgba(21, 45, 74, 0.12);
+  border-top: 1px solid rgba(123, 158, 206, 0.16);
+  border-bottom: 1px solid rgba(123, 158, 206, 0.16);
 }
 
 .schedule-section .section-kicker {
