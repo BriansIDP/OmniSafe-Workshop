@@ -466,9 +466,14 @@ body {
 }
 
 .schedule-section {
-  background: #fff;
+  background: rgb(232, 181, 173);
   color: #414548;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(21, 45, 74, 0.12);
+  border-bottom: 1px solid rgba(21, 45, 74, 0.12);
+}
+
+.schedule-section .section-kicker {
+  color: rgb(21, 45, 74);
 }
 
 .schedule-note {
