@@ -886,6 +886,14 @@ body {
   color: var(--text-soft);
 }
 
+.cfp-meta-block .cfp-timezone-link {
+  color: rgb(21, 45, 74);
+}
+
+.cfp-meta-block .cfp-timezone-note {
+  font-size: 0.95rem;
+}
+
 .cfp-date {
   color: rgb(224, 106, 77);
   font-weight: 700;
