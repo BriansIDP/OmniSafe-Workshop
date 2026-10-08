@@ -221,6 +221,88 @@ body {
   margin-right: auto;
 }
 
+.committee {
+  margin-top: 56px;
+  text-align: center;
+}
+
+.committee-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.committee-summary::-webkit-details-marker {
+  display: none;
+}
+
+.committee-kicker {
+  margin: 0;
+}
+
+.committee-note {
+  margin: 0;
+}
+
+.committee-summary:hover .committee-note,
+.committee-summary:focus-visible .committee-note {
+  text-decoration: underline;
+}
+
+.committee-body {
+  max-width: 1000px;
+  margin: 28px auto 0;
+  animation: committee-reveal 0.25s ease;
+}
+
+.committee-thanks {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.committee-order {
+  margin: 0 0 24px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.committee-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 2;
+}
+
+.committee-list li {
+  display: inline;
+}
+
+.committee-list li:not(:last-child)::after {
+  content: ",\00a0\00a0 ";
+}
+
+.committee-join {
+  margin: 28px 0 0;
+  text-wrap: balance;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+
+.committee-join a {
+  color: rgb(224, 106, 77);
+}
+
+@keyframes committee-reveal {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: none; }
+}
+
 .organizer-row {
   display: grid;
   align-items: start;
@@ -254,7 +336,7 @@ body {
   width: clamp(100px, 9vw, 140px);
   aspect-ratio: 1;
   border-radius: 50%;
-  margin: 0 auto 10px;
+  margin: 0 auto 18px;
   overflow: hidden;
   background: #e7edf5;
   box-shadow: inset 0 0 0 1px rgba(21, 45, 74, 0.06);
@@ -492,10 +574,6 @@ body {
   color: #414548;
   border-top: 1px solid rgba(123, 158, 206, 0.16);
   border-bottom: 1px solid rgba(123, 158, 206, 0.16);
-}
-
-.schedule-section .section-kicker {
-  color: rgb(21, 45, 74);
 }
 
 .schedule-note {
